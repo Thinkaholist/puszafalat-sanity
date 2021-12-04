@@ -1,9 +1,37 @@
-# Sanity Clean Content Studio
+# Puszafalat backend (with Sanity)
 
-Congratulations, you have now installed the Sanity Content Studio, an open source real-time content editing environment connected to the Sanity backend.
+## Data structure
 
-Now you can do the following things:
+### Models
 
-- [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
-- [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
-- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
+#### Puszafalat
+
+- title - string
+- slug
+- city - City / Region ?
+- story - text
+- recipe - Recipe
+- song - Song
+- picture - image (1)
+
+#### Region / City ?
+
+- name - string
+- picture - image (1)
+
+#### Course
+
+- name - string
+- picture - image (1)
+
+#### Recipe
+
+- name - string
+- ingredients - text
+- making - text
+
+#### Song
+
+- title - string
+- lyrics - text
+- bandcamp link - text (url/iFrame)
