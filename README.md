@@ -7,8 +7,8 @@
 #### Puszafalat
 
 - title - string
-- slug
-- city - City / Region ?
+- slug (from title)
+- origin - string ("Region, City")
 - story - text
 - recipe - Recipe
 - song - Song
@@ -34,4 +34,38 @@
 
 - title - string
 - lyrics - text
-- bandcamp link - text (url/iFrame)
+- bandcamp link - text (iFrame)
+
+### Single Pages
+
+#### Home Page
+
+- image
+- heading - string
+- subheading - string / text
+- musicText - text
+- BandCamp album link
+
+#### Main menu
+
+- language selector
+- Recipes menu
+
+#### Recipes page
+
+- Starters button
+- Main courses button
+- Desserts button
+
+#### Puszafalat (single)
+
+- Story
+- Recipe
+- Song
+- Button
+- storyImage
+- songImage
+
+### Footer
+
+???
