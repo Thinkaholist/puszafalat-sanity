@@ -1,8 +1,18 @@
 // First, we must import the schema creator
-import createSchema from 'part:@sanity/base/schema-creator'
+import createSchema from 'part:@sanity/base/schema-creator';
 
 // Then import schema types from any plugins that might expose them
-import schemaTypes from 'all:part:@sanity/base/schema-type'
+import schemaTypes from 'all:part:@sanity/base/schema-type';
+
+// Import documents
+import puszafalat from './documents/puszafalat';
+import recipe from './documents/recipe';
+import song from './documents/song';
+
+// Import objects
+import localeString from './objects/localeString';
+import localeText from './objects/localeText';
+import imageWithInfo from './objects/imageWithInfo';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -12,5 +22,11 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     /* Your types here! */
+    localeString,
+    localeText,
+    puszafalat,
+    imageWithInfo,
+    recipe,
+    song,
   ]),
-})
+});
