@@ -8,6 +8,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 import puszafalat from './documents/puszafalat';
 import recipe from './documents/recipe';
 import song from './documents/song';
+import courseType from './documents/courseType';
 
 // Import objects
 import localeString from './objects/localeString';
@@ -28,5 +29,6 @@ export default createSchema({
     imageWithInfo,
     recipe,
     song,
+    courseType,
   ]),
 });
