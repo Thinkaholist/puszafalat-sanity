@@ -19,6 +19,12 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      title: 'Rank (# Ordering)',
+      name: 'rank',
+      type: 'number',
+      validation: (Rule) => Rule.required().min(1),
+    },
+    {
       title: 'Origin',
       name: 'origin',
       type: 'localeString',
