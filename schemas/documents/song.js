@@ -2,6 +2,7 @@ export default {
   title: 'Song',
   name: 'song',
   type: 'document',
+  icon: () => '🎶',
   fields: [
     {
       title: 'Title',

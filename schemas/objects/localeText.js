@@ -19,5 +19,6 @@ export default {
     name: lang.id,
     type: 'text',
     fieldset: lang.isDefault ? null : 'translations',
+    validation: (Rule) => Rule.required(),
   })),
 };

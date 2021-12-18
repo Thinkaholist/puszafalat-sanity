@@ -9,6 +9,10 @@ import puszafalat from './documents/puszafalat';
 import recipe from './documents/recipe';
 import song from './documents/song';
 import courseType from './documents/courseType';
+import homePage from './documents/homePage';
+import recipesPage from './documents/recipesPage';
+import puszafalatPage from './documents/puszafalatPage';
+import footerPage from './documents/footerPage';
 
 // Import objects
 import localeString from './objects/localeString';
@@ -30,5 +34,9 @@ export default createSchema({
     recipe,
     song,
     courseType,
+    homePage,
+    recipesPage,
+    puszafalatPage,
+    footerPage,
   ]),
 });
