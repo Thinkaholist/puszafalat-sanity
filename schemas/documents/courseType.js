@@ -2,6 +2,7 @@ export default {
   title: 'Course Type',
   name: 'courseType',
   type: 'document',
+  icon: () => '🍴',
   fields: [
     {
       title: 'Name',

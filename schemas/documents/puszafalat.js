@@ -2,6 +2,7 @@ export default {
   title: 'Puszafalat',
   name: 'puszafalat',
   type: 'document',
+  icon: () => '✨',
   fields: [
     {
       title: 'Title',

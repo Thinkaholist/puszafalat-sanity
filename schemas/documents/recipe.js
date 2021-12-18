@@ -2,6 +2,7 @@ export default {
   title: 'Recipe',
   name: 'recipe',
   type: 'document',
+  icon: () => '🥕',
   fields: [
     {
       title: 'Name',
