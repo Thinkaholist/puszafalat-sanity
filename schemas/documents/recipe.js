@@ -35,16 +35,10 @@ export default {
       type: 'localeText',
       validation: (Rule) => Rule.required(),
     },
-    {
-      title: 'Image',
-      name: 'image',
-      type: 'imageWithInfo',
-    },
   ],
   preview: {
     select: {
       title: 'name.hu',
-      media: 'image.image',
     },
   },
 };
