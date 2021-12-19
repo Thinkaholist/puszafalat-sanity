@@ -27,6 +27,11 @@ export default {
       type: 'localeText',
       validation: (Rule) => Rule.required(),
     },
+    {
+      name: 'albumEmbedCode',
+      title: 'Album embed code',
+      type: 'text',
+    },
   ],
   preview: {
     select: {

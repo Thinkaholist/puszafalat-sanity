@@ -5,6 +5,17 @@ export default () =>
   S.list()
     .title('Contents')
     .items([
+      ...S.documentTypeListItems().filter(
+        (item) =>
+          ![
+            'homePage',
+            'recipesPage',
+            'puszafalatPage',
+            'footerPage',
+            'headerPage',
+          ].includes(item.getId())
+      ),
+      S.divider(),
       S.listItem()
         .title('Home Page')
         .icon(() => '🏠')
@@ -22,20 +33,13 @@ export default () =>
           S.document().schemaType('puszafalatPage').documentId('puszafalatPage')
         ),
       S.listItem()
-        .title('Footer')
-        .icon(() => '👣')
-        .child(S.document().schemaType('footerPage').documentId('footerPage')),
-      S.listItem()
         .title('Header')
         .icon(() => '🎩')
         .child(S.document().schemaType('headerPage').documentId('headerPage')),
-      S.divider(),
-      ...S.documentTypeListItems().filter(
-        (item) =>
-          !['homePage', 'recipesPage', 'puszafalatPage', 'footerPage'].includes(
-            item.getId()
-          )
-      ),
+      S.listItem()
+        .title('Footer')
+        .icon(() => '👣')
+        .child(S.document().schemaType('footerPage').documentId('footerPage')),
       //   S.divider(),
       //   S.listItem()
       //     .title('Site Settings')
