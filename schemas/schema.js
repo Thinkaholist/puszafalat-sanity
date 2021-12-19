@@ -13,6 +13,7 @@ import homePage from './documents/homePage';
 import recipesPage from './documents/recipesPage';
 import puszafalatPage from './documents/puszafalatPage';
 import footerPage from './documents/footerPage';
+import headerPage from './documents/headerPage';
 
 // Import objects
 import localeString from './objects/localeString';
@@ -38,5 +39,6 @@ export default createSchema({
     recipesPage,
     puszafalatPage,
     footerPage,
+    headerPage,
   ]),
 });

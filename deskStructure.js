@@ -25,6 +25,10 @@ export default () =>
         .title('Footer')
         .icon(() => '👣')
         .child(S.document().schemaType('footerPage').documentId('footerPage')),
+      S.listItem()
+        .title('Header')
+        .icon(() => '🎩')
+        .child(S.document().schemaType('headerPage').documentId('headerPage')),
       S.divider(),
       ...S.documentTypeListItems().filter(
         (item) =>
