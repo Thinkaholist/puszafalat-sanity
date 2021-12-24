@@ -7,7 +7,8 @@ export default {
     {
       title: 'Title',
       name: 'title',
-      type: 'localeString',
+      type: 'localeStringRequired',
+      validation: (Rule) => Rule.required(),
     },
     {
       title: 'URL identifier (slug)',
@@ -28,7 +29,8 @@ export default {
     {
       title: 'Origin',
       name: 'origin',
-      type: 'localeString',
+      type: 'localeStringRequired',
+      validation: (Rule) => Rule.required(),
     },
     {
       title: 'Story',
@@ -36,26 +38,70 @@ export default {
       type: 'localeText',
     },
     {
-      title: 'Recipe',
-      name: 'recipe',
-      type: 'reference',
-      to: [{ type: 'recipe' }],
-    },
-    {
-      title: 'Song',
-      name: 'song',
-      type: 'reference',
-      to: [{ type: 'song' }],
-    },
-    {
       title: 'Illustration',
       name: 'illustration',
       type: 'imageWithInfo',
+    },
+    {
+      title: 'Recipe name',
+      name: 'recipeName',
+      type: 'localeStringRequired',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      title: 'Recipe note',
+      name: 'recipeNote',
+      type: 'localeString',
+      description: 'Pl. Laci bácsi kedvence',
+    },
+    {
+      title: 'Simple Explanation',
+      name: 'simpleExplanation',
+      type: 'localeString',
+      description: 'What is this food with simple words?',
+    },
+    {
+      title: 'Food Type',
+      name: 'foodType',
+      type: 'reference',
+      to: [{ type: 'courseType' }],
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      title: 'Ingredients',
+      name: 'ingredients',
+      type: 'localeText',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      title: 'Making',
+      name: 'making',
+      type: 'localeText',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      title: 'Song title',
+      name: 'songTitle',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      title: 'Song lyrics',
+      name: 'songLyrics',
+      type: 'text',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      title: 'BandCamp Track Embed Code',
+      name: 'bandcampTrack',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
     },
   ],
   preview: {
     select: {
       title: 'title.hu',
+      subtitle: 'rank',
       media: 'illustration.image',
     },
   },

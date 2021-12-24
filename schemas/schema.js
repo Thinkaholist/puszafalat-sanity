@@ -6,8 +6,6 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 
 // Import documents
 import puszafalat from './documents/puszafalat';
-import recipe from './documents/recipe';
-import song from './documents/song';
 import courseType from './documents/courseType';
 import homePage from './documents/homePage';
 import recipesPage from './documents/recipesPage';
@@ -19,6 +17,7 @@ import headerPage from './documents/headerPage';
 import localeString from './objects/localeString';
 import localeText from './objects/localeText';
 import imageWithInfo from './objects/imageWithInfo';
+import localeStringRequired from './objects/localeStringRequired';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -32,13 +31,12 @@ export default createSchema({
     localeText,
     puszafalat,
     imageWithInfo,
-    recipe,
-    song,
     courseType,
     homePage,
     recipesPage,
     puszafalatPage,
     footerPage,
     headerPage,
+    localeStringRequired,
   ]),
 });

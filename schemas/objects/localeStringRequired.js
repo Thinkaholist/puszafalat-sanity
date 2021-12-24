@@ -5,7 +5,7 @@ const supportedLanguages = [
 ];
 
 export default {
-  name: 'localeString',
+  name: 'localeStringRequired',
   type: 'object',
   fieldsets: [
     {
@@ -19,5 +19,6 @@ export default {
     name: lang.id,
     type: 'string',
     fieldset: lang.isDefault ? null : 'translations',
+    validation: (Rule) => Rule.required(),
   })),
 };

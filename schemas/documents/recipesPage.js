@@ -22,6 +22,12 @@ export default {
       type: 'localeString',
       validation: (Rule) => Rule.required(),
     },
+    {
+      name: 'searchInputPlaceholder',
+      title: 'Search Input Placeholder',
+      type: 'localeString',
+      validation: (Rule) => Rule.required(),
+    },
   ],
   preview: {
     select: {
