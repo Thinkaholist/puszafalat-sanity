@@ -28,6 +28,18 @@ export default {
       type: 'localeString',
       validation: (Rule) => Rule.required(),
     },
+    {
+      name: 'allRecipeButtonText',
+      title: 'All recipe button text',
+      type: 'localeString',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'noPuszafalatFoundText',
+      title: 'No puszafalat found text',
+      type: 'localeString',
+      validation: (Rule) => Rule.required(),
+    },
   ],
   preview: {
     select: {

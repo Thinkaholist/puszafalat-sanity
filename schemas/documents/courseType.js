@@ -5,6 +5,11 @@ export default {
   icon: () => '🍴',
   fields: [
     {
+      title: 'Serial number',
+      name: 'serialNumber',
+      type: 'number',
+    },
+    {
       title: 'Name',
       name: 'name',
       type: 'localeString',
