@@ -19,6 +19,8 @@ import localeString from './objects/localeString';
 import localeText from './objects/localeText';
 import imageWithInfo from './objects/imageWithInfo';
 import localeStringRequired from './objects/localeStringRequired';
+import localeImage from './objects/localeImage';
+import urlWithDisplay from './objects/urlWithDisplay';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -40,5 +42,7 @@ export default createSchema({
     headerPage,
     localeStringRequired,
     siteSettings,
+    localeImage,
+    urlWithDisplay,
   ]),
 });
