@@ -5,6 +5,12 @@ export default {
   __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
   fields: [
     {
+      name: 'pageTitle',
+      title: 'Page title',
+      type: 'localeString',
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: 'heroImage',
       title: 'Hero Image',
       type: 'imageWithInfo',

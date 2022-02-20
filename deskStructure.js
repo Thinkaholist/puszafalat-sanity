@@ -13,6 +13,7 @@ export default () =>
             'puszafalatPage',
             'footerPage',
             'headerPage',
+            'siteSettings',
           ].includes(item.getId())
       ),
       S.divider(),
@@ -40,11 +41,11 @@ export default () =>
         .title('Footer')
         .icon(() => '👣')
         .child(S.document().schemaType('footerPage').documentId('footerPage')),
-      //   S.divider(),
-      //   S.listItem()
-      //     .title('Site Settings')
-      //     .icon(() => <FcSettings />)
-      //     .child(
-      //       S.document().schemaType('siteSettings').documentId('siteSettings')
-      //     ),
+      S.divider(),
+      S.listItem()
+        .title('Site Settings')
+        .icon(() => '⚙️')
+        .child(
+          S.document().schemaType('siteSettings').documentId('siteSettings')
+        ),
     ]);
