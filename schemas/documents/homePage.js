@@ -28,6 +28,16 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: 'youtube1',
+      title: 'First Youtube video',
+      type: 'urlWithDisplay',
+    },
+    {
+      name: 'youtube2',
+      title: 'Second Youtube Video',
+      type: 'urlWithDisplay',
+    },
+    {
       name: 'bandCampText',
       title: 'Bandcamp text',
       type: 'localeText',
