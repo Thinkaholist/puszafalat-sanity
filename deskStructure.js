@@ -1,5 +1,5 @@
 import S from '@sanity/desk-tool/structure-builder';
-import React from 'react';
+// import React from 'react';
 
 export default () =>
   S.list()

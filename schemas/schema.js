@@ -13,6 +13,7 @@ import puszafalatPage from './documents/puszafalatPage';
 import footerPage from './documents/footerPage';
 import headerPage from './documents/headerPage';
 import siteSettings from './documents/siteSettings';
+import ticket from './documents/ticket';
 
 // Import objects
 import localeString from './objects/localeString';
@@ -44,5 +45,6 @@ export default createSchema({
     siteSettings,
     localeImage,
     urlWithDisplay,
+    ticket,
   ]),
 });
