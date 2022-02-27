@@ -14,6 +14,7 @@ import footerPage from './documents/footerPage';
 import headerPage from './documents/headerPage';
 import siteSettings from './documents/siteSettings';
 import ticket from './documents/ticket';
+import clickableLogo from './documents/clickableLogo';
 
 // Import objects
 import localeString from './objects/localeString';
@@ -46,5 +47,6 @@ export default createSchema({
     localeImage,
     urlWithDisplay,
     ticket,
+    clickableLogo,
   ]),
 });
