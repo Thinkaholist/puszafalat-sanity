@@ -8,6 +8,7 @@ export default {
       name: 'pageTitle',
       title: 'Page title',
       type: 'localeString',
+      description: 'Ez van a böngésző tab-on, SEO-nak fontos.',
       validation: (Rule) => Rule.required(),
     },
     {
@@ -26,6 +27,16 @@ export default {
       title: 'Subheader text',
       type: 'localeText',
       validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'explanationText',
+      title: 'Explanation text',
+      type: 'localeString',
+    },
+    {
+      name: 'ctaButtonText',
+      title: 'CTA Button text',
+      type: 'localeString',
     },
     {
       name: 'youtube1',
